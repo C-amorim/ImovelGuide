@@ -8,13 +8,12 @@ O ImovelGuide é um projeto desenvolvido para auxiliar usuários na busca e orie
 
 - **Repositório público**
 - **Linguagem principal:** CSS
-- **Homepage:** [Acesse aqui](https://imovel-guide-rose.vercel.app)
 - **Autor:** [C-amorim](https://github.com/C-amorim)
 
 ## Como acessar
 
 O projeto está disponível online:  
-[https://imovel-guide-rose.vercel.app](https://imovel-guide-rose.vercel.app)
+[https://imovel-guide-rose.vercel.app](https://imovel-guide-bay.vercel.app)
 
 ## Licença
 
