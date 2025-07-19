@@ -185,4 +185,8 @@ body {
   .footer-left {
     display: none;
   }
+
+  .footer-center {
+    font-size: 12px;
+  }
 }
