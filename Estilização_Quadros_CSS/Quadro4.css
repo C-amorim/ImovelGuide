@@ -1,0 +1,64 @@
+:root {
+  --cor-primaria: #fe6613; /* Cor de destaque dos botões */
+  --cor-secundaria: #1b2653; /* Cor de Fundo do Header e Footer */
+  --cor-terciaria: #787878; /* Cor de Contorno das bordas e Itens */
+  --cor-branca: #ffffff; /* para bordas de botões */
+  
+   --fonte-principal: 'Roboto', sans-serif; /* fonte dos titulos e paragrafos */
+   --tamanho-titulo: 18px;
+   --tamanho-parafrafo: 14px;
+   --radio-da-borda: 25px;
+}
+
+.section_card_four {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.quadro_quatro_imagem {
+  width: 100%;
+}
+
+.botao_modal {  
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 250px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal_conteudo {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+.fechar_modal {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}

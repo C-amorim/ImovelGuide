@@ -1,0 +1,188 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-primaria: #fe6613; /* Cor de destaque dos botões */
+  --cor-secundaria: #1b2653; /* Cor de Fundo do Header e Footer */
+  --cor-terciaria: #787878; /* Cor de Contorno das bordas e Itens */
+  --cor-branca: #ffffff; /* para bordas de botões */
+  
+   --fonte-principal: 'Roboto', sans-serif; /* fonte dos titulos e paragrafos */
+   --tamanho-titulo: 18px;
+   --tamanho-parafrafo: 14px;
+   --radio-da-borda: 25px;
+}
+
+
+body {
+  font-family: sans-serif;
+}
+
+
+/* Cabeçalho Responsivo */
+.header {
+  background-color: #1b2653;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 1em;
+}
+
+.nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav_menu_left {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+}
+
+.nav_menu_rigth li {
+    display: none;
+}
+
+.nav_menu_left li a {
+    text-decoration: none;
+    color: var(--cor-branca);
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 2em;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-cadastro {
+  border: 2px solid white;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+}
+
+.hamburguer {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Conteudo da Pagina */
+.main {
+    margin: 1em;
+}
+
+.main_section_card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.section_card {
+    width: 400px;
+    height: 400px;
+    border-radius: 1em;
+    border: 2px solid var(--cor-terciaria);
+}
+
+/* Rodapé */
+.footer {
+  background-color: var(--cor-secundaria);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-left a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.footer-right img {
+  height: 30px;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+
+  /* cabeçalho */  
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #1b2653;
+    width: 100%;
+    padding: 1rem 2rem;
+    z-index: 9999;
+  }
+
+  .nav_menu_left {
+    display: none;
+  }
+
+  .nav_menu_rigth li {
+    display: flex;
+    justify-content: center;
+}
+
+  .nav.active {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav ul li {
+    border-bottom: 1px solid var(--cor-terciaria);
+    text-align: center;
+    padding: 1em;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  /* Rodapé */
+  .footer-left {
+    display: none;
+  }
+}

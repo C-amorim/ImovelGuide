@@ -1,0 +1,65 @@
+:root {
+  --cor-primaria: #fe6613; /* Cor de destaque dos botões */
+  --cor-secundaria: #1b2653; /* Cor de Fundo do Header e Footer */
+  --cor-terciaria: #787878; /* Cor de Contorno das bordas e Itens */
+  --cor-branca: #ffffff; /* para bordas de botões */
+  
+   --fonte-principal: 'Roboto', sans-serif; /* fonte dos titulos e paragrafos */
+   --tamanho-titulo: 18px;
+   --tamanho-parafrafo: 14px;
+   --radio-da-borda: 25px;
+}
+
+.section_card_two {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1.5em;
+}
+
+.form_grupo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+}
+
+.form_grupo label {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--cor-secundaria);
+}
+
+.form_grupo input {
+  padding: 10px;
+  border: 1px solid var(--cor-terciaria);
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form_grupo textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--cor-terciaria);
+  border-radius: 5px;
+  font-size: var(--tamanho-parafrafo);
+  font-family: var(--fonte-principal);
+  margin-bottom: 1.5em;
+  resize: none;
+}
+
+.botao_enviar {
+  padding: 10px 20px;
+  background-color: var(--cor-primaria);
+  color: white;
+  border: none;
+  border-radius: var(--radio-da-borda);
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.botao_enviar:hover {
+  opacity: 0.9;
+}

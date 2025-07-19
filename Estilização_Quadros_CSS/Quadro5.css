@@ -1,0 +1,27 @@
+:root {
+  --cor-primaria: #fe6613; /* Cor de destaque dos botões */
+  --cor-secundaria: #1b2653; /* Cor de Fundo do Header e Footer */
+  --cor-terciaria: #787878; /* Cor de Contorno das bordas e Itens */
+  --cor-branca: #ffffff; /* para bordas de botões */
+  
+   --fonte-principal: 'Roboto', sans-serif; /* fonte dos titulos e paragrafos */
+   --tamanho-titulo: 18px;
+   --tamanho-parafrafo: 14px;
+   --radio-da-borda: 25px;
+}
+
+.section_card_five {
+    overflow: hidden;
+}
+
+.section_card_five_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    transform: scale(1.4);
+}
+
+.section_card_five_img:hover {
+    transition: 4s;
+    transform: scale(1.0);
+}

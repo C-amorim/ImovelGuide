@@ -1,0 +1,60 @@
+:root {
+  --cor-primaria: #fe6613; /* Cor de destaque dos botões */
+  --cor-secundaria: #1b2653; /* Cor de Fundo do Header e Footer */
+  --cor-terciaria: #787878; /* Cor de Contorno das bordas e Itens */
+  --cor-branca: #ffffff; /* para bordas de botões */
+  
+   --fonte-principal: 'Roboto', sans-serif; /* fonte dos titulos e paragrafos */
+   --tamanho-titulo: 18px;
+   --tamanho-parafrafo: 14px;
+   --radio-da-borda: 25px;
+}
+
+.section_card_one {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.section_card_imagem {
+    width: 200px;
+    height: 200px;
+    border-radius: 1em;
+    margin: 1em;
+    filter: blur(2px);
+}
+
+.section_card_descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5em;
+}
+
+.section_card_descricao h2, p {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+}
+
+.section_card_descricao button {
+    border: none;
+    background: none;
+    color: #fe6613;
+    font-family: var(--fonte-principal);
+    border-bottom: 3px solid var(--cor-primaria);
+}
+
+.telefone-oculto {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  margin-top: 0.5em;
+}
+.telefone-visivel {
+  opacity: 1;
+  max-height: 100px;
+}

@@ -1,0 +1,77 @@
+:root {
+  --cor-primaria: #fe6613; /* Cor de destaque dos botões */
+  --cor-secundaria: #1b2653; /* Cor de Fundo do Header e Footer */
+  --cor-terciaria: #787878; /* Cor de Contorno das bordas e Itens */
+  --cor-branca: #ffffff; /* para bordas de botões */
+  
+   --fonte-principal: 'Roboto', sans-serif; /* fonte dos titulos e paragrafos */
+   --tamanho-titulo: 18px;
+   --tamanho-parafrafo: 14px;
+   --radio-da-borda: 25px;
+}
+
+.section_card_tree {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.quadro_tres_titulo {
+  font-size: var(--tamanho-titulo);
+  color: var(--cor-secundaria);
+  margin-bottom: 1em;
+}
+
+.quadro_tres_titulo {
+    margin: 1em;
+}
+
+.quadro_tres_form {
+  margin: 1em;
+}
+
+.quadro_tres_inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+  gap: 10px;
+}
+
+.quadro_tres_inputs input {
+  width: 45%;
+  padding: 10px;
+  border: 1px solid var(--cor-terciaria);
+  border-radius: 5px;
+  font-size: var(--tamanho-parafrafo);
+}
+
+.quadro_tres_inputs #resultado {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: var(--cor-secundaria);
+}
+
+.quadro_tres_label {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--cor-secundaria);
+}
+
+.botao_calcular {
+  margin-top: 5.3em;  
+  width: 150px;
+  padding: 12px;
+  background-color: var(--cor-primaria);
+  color: white;
+  border: none;
+  border-radius: var(--radio-da-borda);
+  font-weight: bold;
+  font-size: var(--tamanho-parafrafo);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.botao_calcular:hover {
+  opacity: 0.9;
+}
