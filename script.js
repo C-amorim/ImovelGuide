@@ -124,10 +124,3 @@ function baixarImagem() {
       alert("Erro ao gerar a imagem.");
     });
 }
-
-window.addEventListener("load", function () {
-  const imagem = document.querySelector(".quadro_quatro_imagem");
-  if (imagem) {
-    imagem.classList.add("zoom-voltar");
-  }
-});
